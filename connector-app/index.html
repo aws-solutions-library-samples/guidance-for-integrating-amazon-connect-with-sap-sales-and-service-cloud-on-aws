@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CCP Embeded into custom HTML</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="./lib/connect-streams-min.js"></script>
+</head>
+<body>
+ <!-- <div>
+    CCP Embeded into custom HTML - Sample 2
+  </div>
+-->
+  <!--<div class="abc def ghi" id="div1">Remove me.......</div> -->
+  <div id="container-div" style="float:left; width: 100%; height: 95vh;"></div>
+  <!-- Call the index.js script that contains all JS code to start the CCP inside "container-div"-->
+  <script type="module" src="./scripts/config.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
+ <!-- <div style="float:left;">
+    <table id="attributes">
+      <thead>
+          <tr>
+              <th>AttributeName</th>
+              <th>Value</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div> -->
+</body>
+</html>

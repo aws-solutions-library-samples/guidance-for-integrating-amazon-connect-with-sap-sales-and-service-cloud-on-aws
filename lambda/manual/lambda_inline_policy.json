@@ -1,0 +1,33 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Action": [
+				"s3:Describe*",
+				"s3:Get*",
+				"s3:List*",
+				"s3:ListBucket"
+			],
+			"Resource": [
+				"arn:aws:s3:::<S3 Bucket Name>/*",
+				"arn:aws:s3:::<S3 Bucket Name>"
+			],
+			"Effect": "Allow"
+		},
+		{
+			"Action": [
+				"cloudwatch:GenerateQuery",
+				"ssm:Describe*",
+				"ssm:Get*",
+				"ssm:List*"
+			],
+			"Resource": "*",
+			"Effect": "Allow"
+		},
+		{
+			"Action": "secretsmanager:GetSecretValue",
+			"Resource": "<arn of Secrets Manager Secret entry>",
+			"Effect": "Allow"
+		}
+	]
+}
