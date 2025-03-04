@@ -117,7 +117,7 @@ The [output](docs/BootStrap.png) shows the AWS resources created by the CDK boot
 
 4. **CDK Deployment** - deploy the CDK solution with the required parameters in the region of your choice. Ensure you have set the environment variable ```AWS_REGION``` with the region where you want to deploy.
 
-Ensure you are using unique values for 'AmazonConnectInstanceAliasParam', 'AppConnectorBucketNameParam' and 'ConnectBucketNameParam'. Also ensure you are using right values for c4cBaseUrlParam, c4cUsernameParam, c4cPasswordParam which are the base service URL and credentials needed to authenticate to the SAP Sales and Service cloud REST API.
+Ensure you are using unique values for 'AmazonConnectInstanceAliasParam', 'AppConnectorBucketNameParam' and 'ConnectBucketNameParam'. Also ensure you are using right values for c4cBaseUrlParam, c4cUsernameParam, c4cPasswordParam which are the base service URL and credentials needed to authenticate to the SAP Sales and Service cloud REST API. Also please take a look at [Common Errors and Troubleshooting](#common-errors-and-troubleshooting) section. 
 
 ```bash
 ⚡ export AWS_REGION=<DESIRED AWS REGION>   && \                                                                           
@@ -233,6 +233,7 @@ Please consider that the Amazon S3 bucket used by Amazon Connect to store call r
 ## Common Errors and Troubleshooting
 ### Errors
 1. CDK deploy can fail if unique values are not provided for 'AmazonConnectInstanceAliasParam', 'AppConnectorBucketNameParam' and 'ConnectBucketNameParam'.
+2. Sometimes Amazon Connect phone number may not be successfully claimed by CDK, in that case you will see an error in `cdk deploy` step: "*Received response status [FAILED] from custom resource. Message returned: User: arn:aws:sts::... is not authorized to perform: connect:AssociatePhoneNumberContactFlow on resource: arn:aws:connect:...*". In that case you will need to (a) Delete the S3 bucket and its content created in the AWS account with name that you proivided in `AppConnectorBucketNameParam` in cdk deploy. (b) Go to CloudFormation console and delete the `AmazonConnectFullStack`, (c) rerun the `cdk deploy` step. 
 
 ## FAQ, Known Issues, Additional Considerations, Limitations and Disclaimer
 

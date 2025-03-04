@@ -19,7 +19,9 @@ const stack = new cdk.Stack(app, `AmazonConnectFullStack`, {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
     region: process.env.CDK_DEFAULT_REGION
-  }
+  },
+  description : "Guidance for Integrating Amazon Connect with SAP Sales and Service Cloud on AWS (SO9003)"
+
 });
 
 // Define CDK Parameters
