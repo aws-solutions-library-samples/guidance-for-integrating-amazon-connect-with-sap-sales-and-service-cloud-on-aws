@@ -97,12 +97,12 @@ The CDK deployment process is based on [AWS CDK](https://aws.amazon.com/cdk/).
 ### CDK Deployment Steps:
 1. **Clone the repository** in a directory of your choice:
 ```bash
-⚡ git clone http://GITHUB_CLONE_URL/myproject && cd myproject
+⚡ git clone https://github.com/aws-solutions-library-samples/guidance-for-integrating-amazon-connect-with-sap-sales-and-service-cloud-on-aws.git
 ```
 
 2. **Initialize the CDK project** and install all the required dependencies:
 ```bash
-⚡ cd cdk
+⚡ cd guidance-for-integrating-amazon-connect-with-sap-sales-and-service-cloud-on-aws/cdk
 ⚡ npm install
 ```
 3. **CDK Bootstrap** - follow the [bootstrap process](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping-env.html) prior to deployment:
