@@ -228,7 +228,7 @@ To gain deeper understanding of deployed resources by CDK, you can review the ma
 Here is a PowerPoint deck and a recorded demo for reference. 
 [PowerPoint Deck](docs/Guidance-for-Integrating-Amazon-Connect-with-SAP-on-AWS.pdf)
 
-[![Watch the video](docs/SAP-video.png)](https://www.youtube.com/watch?v=33PAQmyRFB8)
+[![Watch the video](docs/SAP-video.png)](https://www.youtube.com/watch?v=Tg6VjdkfYJg)
 
 ## Cleanup
 
