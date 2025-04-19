@@ -10,7 +10,6 @@ This Guidance demonstrates how to integrate Amazon Connect with SAP Sales and Se
 1. [Deployment Validation](#deployment-validation)
 1. [SAP Sales and Service Cloud Configuration](#sap-sales-and-service-cloud-configuration)
 1. [End to End Validation](#end-to-end-validation)
-1. [Deck and Demo](#deck-and-demo)
 1. [Cleanup](#cleanup)
 1. [Common Errors and Troubleshooting](#common-errors-and-troubleshooting)
 1. [FAQ, known issues, additional considerations, and limitations](#faq-known-issues-additional-considerations-limitations-and-disclaimer)
@@ -223,12 +222,6 @@ To gain deeper understanding of deployed resources by CDK, you can review the ma
 
 <kbd>![](docs/CallDetails.png)</kbd>
 
-## Deck and Demo
-
-Here is a PowerPoint deck and a recorded demo for reference. 
-[PowerPoint Deck](docs/Guidance-for-Integrating-Amazon-Connect-with-SAP-on-AWS.pdf)
-
-[![Watch the video](docs/SAP-video.png)](https://www.youtube.com/watch?v=Tg6VjdkfYJg)
 
 ## Cleanup
 
