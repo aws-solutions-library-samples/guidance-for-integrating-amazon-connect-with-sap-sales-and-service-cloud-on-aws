@@ -88,11 +88,14 @@ export default function (contact) {
             messageObject['ANI'] = messageObjectTemp['ANI'];
 
             // Handle RecordingID
-            // Add Recording ID if message type is NOTIFY
+            // Add Recording ID if message type is ACCEPT
             if (messageObject['ActionTemp']) {
                 // check if action is ACCEPT
                 if (messageObject['ActionTemp'] == 'ACCEPT') {
-                    messageObject['RecordingId'] = contact.contactId;
+                    // Remove dashes in reference ID v1.1
+                    // messageObject['RecordingId'] = contact.contactId;
+                    messageObject['RecordingId'] = String(contact.contactId).replace(/-/g, "").toUpperCase();
+                    // - //
                 }
             }
         }
@@ -120,7 +123,7 @@ export default function (contact) {
         }
 
         if (messageObject['ActionTemp']) {
-            // check if action is NOTIFY
+            // check if action is ACCEPT
             if (messageObject['ActionTemp'] == 'ACCEPT') {
                 sendCADParams = true;
             }
@@ -140,8 +143,10 @@ export default function (contact) {
             }
 
         // Handle ExternalReferenceID
-        messageObject['ExternalReferenceID'] = contact.contactId;
-
+        // Remove dashes in reference ID v1.1
+        // messageObject['ExternalReferenceID'] = contact.contactId;
+        messageObject['ExternalReferenceID'] = String(contact.contactId).replace(/-/g, "").toUpperCase();
+        // - //
         console.debug('CDEBUG >> MessageObject', messageObject);
 
         var sPayload = "<?xml version='1.0' encoding='utf-8' ?> <payload> ";

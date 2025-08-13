@@ -17,9 +17,21 @@ window.addEventListener("message", (event) => {
     if (!event.data.Direction && !event.data.RecordingId) return;
 
     const payload = event.data;
-
+    
     if (payload.RecordingId) {
-        var url = `${config.amazonconnect.accessURL}/contact-trace-records/details/` + payload.RecordingId + '?tz=America/New_York';
+
+        // Remove dashes in reference ID v1.1 //
+        let recordingId = payload.RecordingId;
+
+        if (payload.RecordingId.length == 32){
+            // add the dashes back in the recordingID 
+            recordingId = payload.RecordingId.replace(/(.{8})(.{4})(.{4})(.{4})(.{12})/, "$1-$2-$3-$4-$5");
+            recordingId = recordingId.toLowerCase();
+        }
+
+        var url = `${config.amazonconnect.accessURL}/contact-trace-records/details/` + recordingId + '?tz=America/New_York';
+        // -- //
+
         console.debug("CDEBUG >> URL value", url);
         var popupWindow = window.open(url, '_blank');
     }

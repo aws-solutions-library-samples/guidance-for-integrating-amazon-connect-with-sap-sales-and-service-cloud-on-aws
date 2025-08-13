@@ -166,7 +166,13 @@ def extract_summary_refID(event):
 def get_call_record(external_reference_id, auth):
     try:
         url = urljoin(BASE_URL, PHONE_CALL_ENDPOINT_PATH)
-        displayFilter = f"externalId.displayId eq '{external_reference_id}'"
+
+        # Remove dashes in reference ID v1.1
+        # displayFilter = f"externalId.displayId eq '{external_reference_id}'"
+        clean_ref_id = str(external_reference_id).replace('-', '').upper()
+        displayFilter = f"externalId.displayId eq '{clean_ref_id}'"
+        #-#
+
         params = {'$filter': displayFilter}
 
         response = requests.get(url, auth=auth, params=params, timeout=120)
