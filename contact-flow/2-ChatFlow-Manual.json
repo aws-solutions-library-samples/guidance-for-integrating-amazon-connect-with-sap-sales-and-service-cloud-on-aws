@@ -1,0 +1,882 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "f2b763ca-2c00-4911-9c03-a0bfd507851d",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 49.6,
+      "y": 49.6
+    },
+    "ActionMetadata": {
+      "f2b763ca-2c00-4911-9c03-a0bfd507851d": {
+        "position": {
+          "x": -58.4,
+          "y": 270.4
+        }
+      },
+      "01d28818-8dee-4365-a3b3-a5abce46d7dc": {
+        "position": {
+          "x": -34.4,
+          "y": 516.8
+        }
+      },
+      "7bdbd790-808f-4700-a68c-0f8f81da3171": {
+        "position": {
+          "x": -52,
+          "y": 736.8
+        },
+        "dynamicParams": []
+      },
+      "38898cd2-9dbf-44b9-b38e-d529d607bc1c": {
+        "position": {
+          "x": 2974.4,
+          "y": 1150.4
+        }
+      },
+      "97e9cbfb-3135-4f20-bb4f-463230117c3a": {
+        "position": {
+          "x": 4372.8,
+          "y": 925.6
+        }
+      },
+      "9ba8e497-bfa5-4d9d-9c92-f05d0847f335": {
+        "position": {
+          "x": 3220,
+          "y": 666.4
+        },
+        "parameters": {
+          "Attributes": {
+            "CustomerUUID": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "CustomerUUID"
+        ]
+      },
+      "eefaadb2-b3a1-413a-994d-ae3f914e43ce": {
+        "position": {
+          "x": 2797.6,
+          "y": 500
+        },
+        "parameters": {
+          "Attributes": {
+            "Serial": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "Serial"
+        ]
+      },
+      "c057d443-95b0-400c-a8cd-4b6f9843a595": {
+        "position": {
+          "x": 2798.4,
+          "y": 813.6
+        },
+        "parameters": {
+          "Attributes": {
+            "TicketID": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "TicketID"
+        ]
+      },
+      "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b": {
+        "position": {
+          "x": 4028.8,
+          "y": 882.4
+        }
+      },
+      "c46a9f46-a910-402f-bed1-8b3c16dc304c": {
+        "position": {
+          "x": 2118.4,
+          "y": 1160.8
+        },
+        "parameters": {
+          "ProfileRequestData": {
+            "IdentifierName": {
+              "displayName": "Email"
+            },
+            "IdentifierValue": {
+              "useDynamic": true
+            }
+          }
+        },
+        "useDynamic": {
+          "IdentifierName": true,
+          "IdentifierValue": true
+        },
+        "customerProfilesAction": "GetCustomerProfile"
+      },
+      "ac32b571-8929-4192-a5e5-07fa0cfc4659": {
+        "position": {
+          "x": 1742.4,
+          "y": 1130.4
+        },
+        "parameters": {
+          "Attributes": {
+            "Email": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "Email"
+        ]
+      },
+      "2a976ef7-0472-466c-a20a-a475a3a5a702": {
+        "position": {
+          "x": 1676.8,
+          "y": 132
+        }
+      },
+      "22b6d03b-2730-4806-8fe9-19ff3075f5d6": {
+        "position": {
+          "x": 328.8,
+          "y": 502.4
+        }
+      },
+      "Chat bot": {
+        "position": {
+          "x": 1000,
+          "y": 382.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "faq-bot"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "faq-bot",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "13707d98-6377-4ea7-b2f1-089e458d84f5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "qic"
+          }
+        ]
+      },
+      "Q in Connect FAQ Assistant": {
+        "position": {
+          "x": 629.6,
+          "y": 308
+        },
+        "isFriendlyName": true,
+        "children": [
+          "Q in Connect FAQ Assistant-JZGgb7EN04"
+        ],
+        "parameters": {
+          "WisdomAssistantArn": {
+            "displayName": "arn:aws:wisdom:us-east-1:111111111111:assistant/3f121179-9ed1-4853-bdf6-6ee34be576ab"
+          }
+        },
+        "fragments": {
+          "SetContactData": "Q in Connect FAQ Assistant-JZGgb7EN04"
+        }
+      },
+      "Q in Connect FAQ Assistant-JZGgb7EN04": {
+        "position": {
+          "x": 629.6,
+          "y": 308
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b": {
+        "position": {
+          "x": 2490.4,
+          "y": 1297.6
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "Identifier"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "Identifier",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "50b6c709-d807-433d-80d6-7d4bc512c1f4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "serial"
+          },
+          {
+            "id": "d10f3993-795f-4cfc-b322-ff2f827cad3b",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "customer"
+          },
+          {
+            "id": "bd9ca3f3-2174-432e-99d9-8ea808029a98",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ticket"
+          }
+        ]
+      },
+      "72fa2e2e-bec6-407c-ba79-6cdc73fd5518": {
+        "position": {
+          "x": 1369.6,
+          "y": 380.8
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "05b6acf9-e630-4586-80a0-934cd3b2d52c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "COMPLETE"
+          },
+          {
+            "id": "ebc57799-6227-4b10-8764-29812576b806",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ESCALATION"
+          }
+        ]
+      },
+      "37209bd4-c987-460f-8dd8-2dcdb799645b": {
+        "position": {
+          "x": 1364,
+          "y": 814.4
+        }
+      },
+      "c728dfde-1a03-448c-8438-d09b2a61356a": {
+        "position": {
+          "x": 1734.4,
+          "y": 849.6
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "emailAddress"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "emailAddress",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": []
+      },
+      "28b31bae-b899-4143-9dee-2a97a73be003": {
+        "position": {
+          "x": 2442.4,
+          "y": 793.6
+        },
+        "parameters": {
+          "ProfileRequestData": {
+            "IdentifierName": {
+              "displayName": "Phone"
+            },
+            "IdentifierValue": {
+              "useDynamic": true
+            }
+          }
+        },
+        "useDynamic": {
+          "IdentifierName": true,
+          "IdentifierValue": true
+        },
+        "customerProfilesAction": "GetCustomerProfile"
+      },
+      "4b9282d7-7646-4a6a-a67b-5bfdd7e6330f": {
+        "position": {
+          "x": 1709.6,
+          "y": 513.6
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "BasicQueue"
+          }
+        },
+        "queue": {
+          "text": "BasicQueue"
+        }
+      },
+      "da7d8315-a6c1-43df-b436-9fec8b5dfd64": {
+        "position": {
+          "x": 2060,
+          "y": 524
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "bc2b0a67-d263-4dfd-adf0-17da3ecc7300",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "VOICE"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "faq",
+    "description": "",
+    "type": "contactFlow",
+    "status": "published",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": [
+            "Agent",
+            "Customer"
+          ],
+          "IVRRecordingBehavior": "Enabled"
+        },
+        "AnalyticsBehavior": {
+          "Enabled": "True",
+          "AnalyticsLanguage": "en-US",
+          "AnalyticsRedactionBehavior": "Disabled",
+          "AnalyticsRedactionResults": "RedactedAndOriginal",
+          "ChannelConfiguration": {
+            "Chat": {
+              "AnalyticsModes": [
+                "ContactLens"
+              ]
+            },
+            "Voice": {
+              "AnalyticsModes": [
+                "RealTime"
+              ]
+            }
+          },
+          "SummaryConfiguration": {
+            "SummaryModes": [
+              "PostContact"
+            ]
+          },
+          "SentimentConfiguration": {
+            "Enabled": "True"
+          }
+        }
+      },
+      "Identifier": "f2b763ca-2c00-4911-9c03-a0bfd507851d",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": "01d28818-8dee-4365-a3b3-a5abce46d7dc"
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "01d28818-8dee-4365-a3b3-a5abce46d7dc",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "7bdbd790-808f-4700-a68c-0f8f81da3171"
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "Channel": "CHAT"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "7bdbd790-808f-4700-a68c-0f8f81da3171",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "22b6d03b-2730-4806-8fe9-19ff3075f5d6",
+        "Errors": [
+          {
+            "NextAction": "22b6d03b-2730-4806-8fe9-19ff3075f5d6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "38898cd2-9dbf-44b9-b38e-d529d607bc1c",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "38898cd2-9dbf-44b9-b38e-d529d607bc1c",
+        "Errors": [
+          {
+            "NextAction": "38898cd2-9dbf-44b9-b38e-d529d607bc1c",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "38898cd2-9dbf-44b9-b38e-d529d607bc1c",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "CustomerUUID": "$.Lex.Slots.customerID"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "9ba8e497-bfa5-4d9d-9c92-f05d0847f335",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b",
+        "Errors": [
+          {
+            "NextAction": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "Serial": "$.Lex.Slots.serialnumber"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "eefaadb2-b3a1-413a-994d-ae3f914e43ce",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b",
+        "Errors": [
+          {
+            "NextAction": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "TicketID": "$.Lex.Slots.ticketID"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "c057d443-95b0-400c-a8cd-4b6f9843a595",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b",
+        "Errors": [
+          {
+            "NextAction": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Let's find an agent to help you further."
+      },
+      "Identifier": "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+        "Errors": [
+          {
+            "NextAction": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "IdentifierName": "_email",
+          "IdentifierValue": "$.Attributes.Email"
+        },
+        "ProfileResponseData": [
+          "EmailAddress",
+          "FirstName",
+          "LastName",
+          "PhoneNumber"
+        ]
+      },
+      "Identifier": "c46a9f46-a910-402f-bed1-8b3c16dc304c",
+      "Type": "GetCustomerProfile",
+      "Transitions": {
+        "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+        "Errors": [
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "MultipleFoundError"
+          },
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "Email": "$.Lex.Slots.emailaddress"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "ac32b571-8929-4192-a5e5-07fa0cfc4659",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "c46a9f46-a910-402f-bed1-8b3c16dc304c",
+        "Errors": [
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Thank you for speaking with us.  Have a great day."
+      },
+      "Identifier": "2a976ef7-0472-466c-a20a-a475a3a5a702",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "38898cd2-9dbf-44b9-b38e-d529d607bc1c",
+        "Errors": [
+          {
+            "NextAction": "38898cd2-9dbf-44b9-b38e-d529d607bc1c",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Welcome to EcoPump Solutions"
+      },
+      "Identifier": "22b6d03b-2730-4806-8fe9-19ff3075f5d6",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Q in Connect FAQ Assistant",
+        "Errors": [
+          {
+            "NextAction": "Q in Connect FAQ Assistant",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "How can I help you with today?",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:111111111111:bot-alias/8JGFEIVPYP/TSTALIASID"
+        }
+      },
+      "Identifier": "Chat bot",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "72fa2e2e-bec6-407c-ba79-6cdc73fd5518",
+        "Conditions": [
+          {
+            "NextAction": "72fa2e2e-bec6-407c-ba79-6cdc73fd5518",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "qic"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "72fa2e2e-bec6-407c-ba79-6cdc73fd5518",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "72fa2e2e-bec6-407c-ba79-6cdc73fd5518",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomAssistantArn": "arn:aws:wisdom:us-east-1:111111111111:assistant/3f121179-9ed1-4853-bdf6-6ee34be576ab"
+      },
+      "Identifier": "Q in Connect FAQ Assistant",
+      "Type": "CreateWisdomSession",
+      "Transitions": {
+        "NextAction": "Q in Connect FAQ Assistant-JZGgb7EN04",
+        "Errors": [
+          {
+            "NextAction": "Chat bot",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomSessionArn": "$.Wisdom.SessionArn"
+      },
+      "Identifier": "Q in Connect FAQ Assistant-JZGgb7EN04",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "Chat bot",
+        "Errors": [
+          {
+            "NextAction": "Chat bot",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Okay, $.Customer.FirstName.  Tell me either your customer number, or product serial number.",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:111111111111:bot-alias/GLGALFX13U/TSTALIASID"
+        }
+      },
+      "Identifier": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b",
+        "Conditions": [
+          {
+            "NextAction": "eefaadb2-b3a1-413a-994d-ae3f914e43ce",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "serial"
+              ]
+            }
+          },
+          {
+            "NextAction": "9ba8e497-bfa5-4d9d-9c92-f05d0847f335",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "customer"
+              ]
+            }
+          },
+          {
+            "NextAction": "c057d443-95b0-400c-a8cd-4b6f9843a595",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ticket"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "97e9cbfb-3135-4f20-bb4f-463230117c3a",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "4b880ac3-2fb6-4e0f-9aef-cdd3cdf46c2b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Lex.SessionAttributes.Tool"
+      },
+      "Identifier": "72fa2e2e-bec6-407c-ba79-6cdc73fd5518",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "37209bd4-c987-460f-8dd8-2dcdb799645b",
+        "Conditions": [
+          {
+            "NextAction": "2a976ef7-0472-466c-a20a-a475a3a5a702",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "COMPLETE"
+              ]
+            }
+          },
+          {
+            "NextAction": "37209bd4-c987-460f-8dd8-2dcdb799645b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ESCALATION"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "37209bd4-c987-460f-8dd8-2dcdb799645b",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Before we get you in touch with a specialist, let's get some information about you."
+      },
+      "Identifier": "37209bd4-c987-460f-8dd8-2dcdb799645b",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "4b9282d7-7646-4a6a-a67b-5bfdd7e6330f",
+        "Errors": [
+          {
+            "NextAction": "4b9282d7-7646-4a6a-a67b-5bfdd7e6330f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "please enter your email address?",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:111111111111:bot-alias/QFQEXBMPRK/TSTALIASID"
+        }
+      },
+      "Identifier": "c728dfde-1a03-448c-8438-d09b2a61356a",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "ac32b571-8929-4192-a5e5-07fa0cfc4659",
+        "Errors": [
+          {
+            "NextAction": "ac32b571-8929-4192-a5e5-07fa0cfc4659",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "ac32b571-8929-4192-a5e5-07fa0cfc4659",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ProfileRequestData": {
+          "IdentifierName": "_phone",
+          "IdentifierValue": "$.CustomerEndpoint.Address"
+        },
+        "ProfileResponseData": [
+          "EmailAddress",
+          "FirstName",
+          "LastName"
+        ]
+      },
+      "Identifier": "28b31bae-b899-4143-9dee-2a97a73be003",
+      "Type": "GetCustomerProfile",
+      "Transitions": {
+        "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+        "Errors": [
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "MultipleFoundError"
+          },
+          {
+            "NextAction": "7c8be4a9-78b6-4973-9a3c-7a92c5ce646b",
+            "ErrorType": "NoneFoundError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:111111111111:instance/fc1efa4e-ce30-49d1-8702-b2fb0debb652/queue/aadb8add-816c-4712-a7eb-77b4cf216aee"
+      },
+      "Identifier": "4b9282d7-7646-4a6a-a67b-5bfdd7e6330f",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "da7d8315-a6c1-43df-b436-9fec8b5dfd64",
+        "Errors": [
+          {
+            "NextAction": "da7d8315-a6c1-43df-b436-9fec8b5dfd64",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Channel"
+      },
+      "Identifier": "da7d8315-a6c1-43df-b436-9fec8b5dfd64",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "c728dfde-1a03-448c-8438-d09b2a61356a",
+        "Conditions": [
+          {
+            "NextAction": "28b31bae-b899-4143-9dee-2a97a73be003",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "VOICE"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "c728dfde-1a03-448c-8438-d09b2a61356a",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    }
+  ]
+}

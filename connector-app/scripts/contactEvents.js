@@ -101,7 +101,20 @@ export default function (contact) {
         }
         else if (messageObjectTemp['Channel'] == 'CHAT') {
             messageObject['Type'] = 'CHAT';
-            messageObject['Email'] = "test.user@example.com"
+            
+            if (messageObjectTemp['Email'])
+            {
+                messageObject['Email'] = messageObjectTemp['Email'];
+            }
+            
+            // Handle RecordingID
+            // Add Recording ID if message type is ACCEPT
+            if (messageObject['ActionTemp']) {
+                // check if action is ACCEPT
+                if (messageObject['ActionTemp'] == 'ACCEPT') {
+                    messageObject['RecordingId'] = String(contact.contactId).replace(/-/g, "").toUpperCase();                    
+                }
+            }
 
             // check if messageObject has action key
             if (messageObject['Action']) {
@@ -147,6 +160,17 @@ export default function (contact) {
         // messageObject['ExternalReferenceID'] = contact.contactId;
         messageObject['ExternalReferenceID'] = String(contact.contactId).replace(/-/g, "").toUpperCase();
         // - //
+
+        // Special handling for CHAT
+        if (messageObjectTemp['Channel'] == 'CHAT') {
+            // for CHAT only send Action for Accept, do not send ActionTemp
+            if (messageObject['ActionTemp'] == 'ACCEPT') {
+                messageObject['Action'] = 'ACCEPT'
+                delete messageObject.ActionTemp;
+            }
+
+        }
+
         console.debug('CDEBUG >> MessageObject', messageObject);
 
         var sPayload = "<?xml version='1.0' encoding='utf-8' ?> <payload> ";
